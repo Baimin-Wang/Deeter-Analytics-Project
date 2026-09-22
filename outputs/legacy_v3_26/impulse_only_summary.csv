@@ -1,0 +1,2 @@
+group,observations,weeks,goes_again,stalls,fails,goes_again_rate,failure_rate,always_stall_accuracy,resolved_either_way_rate,mean_signed_return_bps,mean_signed_overnight_return_bps,mean_signed_intraday_return_bps,median_signed_return_bps,intraday_with_trend_rate,intraday_against_trend_rate,touch_breakout_rate,both_sides_touched_rate
+IMPULSE_ONLY,62,21,7,49,6,0.11290322580645161,0.0967741935483871,0.7903225806451613,0.20967741935483872,11.268107785665084,0.5536929995342635,8.526249946663876,-25.983518277797877,0.1774193548387097,0.1774193548387097,0.16129032258064516,0.0

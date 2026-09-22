@@ -1,0 +1,23 @@
+﻿{
+  "version": "v4-expanded-universe-and-evidence-window",
+  "impulse_sessions": 5,
+  "atr_sessions": 20,
+  "volume_baseline_sessions": 60,
+  "liquidity_sessions": 20,
+  "min_price": 5.0,
+  "min_median_dollar_volume": 20000000.0,
+  "min_impulse_atr": 3.0,
+  "min_path_efficiency": 0.6,
+  "min_impulse_volume_ratio": 1.5,
+  "min_active_sessions": 3,
+  "min_pause_sessions": 2,
+  "max_pause_sessions": 5,
+  "max_tr_contraction": 0.65,
+  "max_pause_width_atr": 1.5,
+  "max_pause_daily_tr_atr": 1.5,
+  "min_worst_retention": 0.5,
+  "max_extension_fraction": 0.25,
+  "lean_boundary_distance_atr": 0.25,
+  "outcome_buffer_atr": 0.1,
+  "intraday_material_move_atr": 0.5
+}
