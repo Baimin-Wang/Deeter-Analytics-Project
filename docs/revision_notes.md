@@ -17,3 +17,5 @@ The default rules themselves remain the v3 relative-impulse/base rules: the univ
 The current two-year result has 604 evaluated bases: 81 GOES_AGAIN, 432 STALLS and 91 FAILS. This is more informative than 19 observations from the old 56-name six-month run, but the sample is still correlated and selected. The continuation-watch group has negative mean direction-adjusted Friday returns; the broader sample therefore does not validate the lean.
 
 The cache starts in January 2024 for the original fixture and mostly in April 2024 for the expanded download. A request for 156 weeks will include dates that cannot form all baselines; those dates remain visible in `coverage.csv`. A genuine longer history requires fetching earlier bars and, for a production study, point-in-time membership, delisted names and a controlled corporate-action policy.
+
+The repository now also includes `docs/researcher_thoughts.md`, which separates the formal rule specification from the researcher's own reasoning, evidence interpretation and submission posture.

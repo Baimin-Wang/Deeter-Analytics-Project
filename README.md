@@ -1,4 +1,4 @@
-﻿# Deeter Analytics: quant research working project
+# Deeter Analytics: quant research working project
 
 V4 screens for a directional move that is large relative to the stock's normal range, accompanied by participation across the move, followed by a contracting base that retains the move. The lean is a conditional watch near a base boundary. Friday evidence tests closing resolution of that base and reports Friday-session returns separately.
 
@@ -123,6 +123,7 @@ The expected sequence is: first protect sample integrity and out-of-sample evalu
 | `outputs/latest_screen.csv` | Candidate, every rule input, lean, boundary levels and reason |
 | `src/backtest.py`, `outputs/backtest/` | Observations, lean summaries, coverage, impulse-only reference, sensitivity and manifest |
 | `docs/evidence.md`, `docs/evidence_results.md` | Protocol, numbers and limitations |
+| docs/researcher_thoughts.md | Personal research rationale, interview framing and submission posture |
 | `docs/pm_note.md` | Eight-line PM note |
 | `docs/alert_note.md` | Separate no-code early-gains alert proposal |
 | `docs/revision_notes.md` | V4 changes and preserved history |
@@ -132,3 +133,7 @@ The expected sequence is: first protect sample integrity and out-of-sample evalu
 `manifest.json` records effective rules, runtime versions, loaded names, input hashes and source hashes. The manually curated universe has selection and survivorship bias; expanding from 56 to 448 improves breadth but does not make it point-in-time. The online refresh loaded 431 usable names; the remaining 17 are reported rather than silently imputed. Cached prices were not independently cross-checked in this revision and are not a point-in-time database. Daily bars cannot establish attention, fills, short availability or intraday path. V4 follows inspection of previous results and is not a clean holdout. The original brief budgets four hours; this repository includes subsequent revisions and does not claim they all occurred within that original budget.
 
 AI was used to help revise definitions, implement and test code, and paraphrase explanations; the assumptions, outputs and limitations remain explicit for review.
+
+## Researcher's perspective
+
+The formal documents explain the executable definitions. [Researcher's perspective](docs/researcher_thoughts.md) explains the personal reasoning behind the main trade-offs: why the screen is rule-based, why attention is treated as a price-volume proxy, why `UNRESOLVED` and `FAILS` are kept visible, how I interpret the current evidence, and what I would do before making a production claim.
